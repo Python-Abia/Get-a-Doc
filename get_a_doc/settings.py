@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     # Local Apps
     'accounts.apps.AccountsConfig',
     'comments.apps.CommentsConfig',
+    'inquiries',
 ]
 
 MIDDLEWARE = [
