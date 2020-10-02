@@ -1,0 +1,19 @@
+django==1.11.5
+# Configuration
+django-environ==0.4.4
+whitenoise==3.3.0
+# Models
+django-model-utils==3.0.0
+# Images
+Pillow==4.2.1
+# Password storage
+argon2-cffi==16.3.0
+# Python-PostgreSQL Database Adapter
+psycopg2==2.7.3.1
+# Unicode slugification
+awesome-slugify==1.6.5
+# Time zones support
+pytz==2017.2
+# Redis support
+django-redis==4.8.0
+redis>=2.10.5
