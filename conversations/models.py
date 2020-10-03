@@ -10,8 +10,13 @@ class Conversation(models.Model):
     
     
     class meta:
+<<<<<<< HEAD
         verbose_name_plural ="conversations"
         db_table = "conversations"
+=======
+        verbose_name_plural ="messages"
+        db_table = "messages"
+>>>>>>> 9685caf2b3a34308bc58ce04c2baa3a1b023f3c3
         
     def __str__(self):
         return self.email + " " + self.subject
