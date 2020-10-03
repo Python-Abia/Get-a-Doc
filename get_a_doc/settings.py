@@ -38,10 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'accounts.apps.AccountsConfig',
-<<<<<<< HEAD
     'inquiries',
-=======
->>>>>>> 9685caf2b3a34308bc58ce04c2baa3a1b023f3c3
     'conversations',
 ]
 
