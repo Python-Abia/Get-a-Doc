@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'accounts.apps.AccountsConfig',
     'comments.apps.CommentsConfig',
     'inquiries',
+    'conversations',
 ]
 
 MIDDLEWARE = [
