@@ -1,17 +1,19 @@
 from django.db import models
+from django.contrib.auth.models import User
+import datetime
 
-# Create your models here.
+# Create your models here.git
 class Conversation(models.Model):
-    first_name = models.CharField(blank =False, max_length = 50) 
-    last_name  = models.CharField(blank =False, max_length = 50)
-    subject    = models.CharField(blank =False, max_length = 20) 
-    email      = models.EmailField(blank =False, max_length = 50)
-    text       = models.TextField(blank =False, max_length = 500)
+    sender_id = models.ForeignKey(User, on_delete=models.CASCADE)
+    receiver_id = models.ForeignKey(User, on_delete=models.CASCADE, related_name="receiver", default="")
+    text = models.TextField(blank=False, max_length = 500)
+    date_created = models.DateTimeField(auto_now_add = True)
+    last_modified = models.DateTimeField(auto_now = True)
     
     
     class meta:
-        verbose_name_plural ="messages"
-        db_table = "messages"
+        verbose_name_plural ="conversations"
+        db_table = "conversations"
         
     def __str__(self):
-        return self.email + " " + self.subject
+        self.text
