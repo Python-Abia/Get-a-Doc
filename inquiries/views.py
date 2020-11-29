@@ -99,7 +99,11 @@ def category_list(request, pk):
     
 # symptoms API endpoints
 @api_view(['GET', 'POST'])
+<<<<<<< HEAD
 def syptoms_list(request):
+=======
+def symptoms_list(request):
+>>>>>>> 54441c0...  resolved issues #13 @kscottz
         if request.method == 'GET':
             syptoms= Syptoms.objects.all()
             serializer = SyptomsSerializer( syptoms, many = True)
