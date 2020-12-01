@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'corsheaders',
     # Local Apps
     'accounts.apps.AccountsConfig',
-    'comments.apps.CommentsConfig',
+    'comments',
     'inquiries',
     'conversations',
 ]
