@@ -1,5 +1,5 @@
 from django.urls import path
-from .import views
+from . import views
 # urls patterns
 
 app_name = "inquiries"

@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'comments',
     'inquiries',
     'conversations',
+    'insights',
 ]
 
 MIDDLEWARE = [
