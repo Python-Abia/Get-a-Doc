@@ -124,3 +124,7 @@ dmypy.json
 
 # vs code files
 .vscode
+getadocvenv
+getadocvenv/
+.getadocvenv/
+.getadocvenv

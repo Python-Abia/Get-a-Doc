@@ -10,7 +10,7 @@ class Comment(models.Model):
     last_modified = models.DateTimeField(auto_now = True)
     
     
-    class meta:
+    class Meta:
         verbose_name_plural ="comments"
         db_table = "comments"
         
